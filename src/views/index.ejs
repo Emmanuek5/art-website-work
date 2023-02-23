@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("./partials/meta.ejs") %>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/w3css/w3.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arttrick Art Collection</title>
+</head>
+<body>
+    <div class="w3-container header">
+        <a href="#"><img src="resources/logo.png" alt=""></a>
+        <h1>Arttrick</h1>
+        <div class="header-buttons">
+            <a href="#" class="w3-btn  ">Shop</a>
+            <a href="#about" class=" w3-btn ">About Me</a>
+            <a href="#contact" class=" w3-btn ">Contact</a>
+            <a href="#" class=" w3-btn ">Login</a>
+        </div>
+    </div>
+<div class="w3-content w3-display-container" style="max-width:max-content; margin:10px">
+    <!-- Slideshow -->
+    <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
+        <img src="/resources//slide-1//1.jpg" style="width:100%">
+        <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+            <span class="w3-white w3-padding-large">Arttrickt</span>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-animate-opacity" style="display: block;">
+        <img src="/resources//slide-1//2.jpg" style="width:100%">
+        <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+            <span class="w3-white w3-padding-large">Arttrickt</span>
+        </div>
+    </div>
+    <div class="w3-display-container mySlides w3-animate-opacity" style="display: none;">
+        <img src="/resources//slide-1//3.jpg" style="width:100%">
+        <div class="w3-display-topright w3-text-white w3-container w3-padding-32 w3-hide-small">
+            <span class="w3-white w3-padding-large">Arttrickt</span>
+        </div>
+    </div>
+    <div class="w3-center">
+        <div class="w3-section">
+            <button class="w3-button w3-red" onclick="plusDivs(-1)">❮ Prev</button>
+            <button class="w3-button w3-red" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+    </div>
+</div>
+<div class="w3-container w3-content w3-center w3-padding-64"  id="about">
+    <div class="w3-row ">
+        <div class="w3-col">
+            <img src="resources/logo.png" alt="about-me">
+        </div>
+    </div>
+    <h2 class="w3-wide">About Me</h2>
+    <p class="w3-opacity"><i>I Am A ...</i></p>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+        id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="w3-black w3-container shosp" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">Art Projects</h2>
+        <p class="w3-opacity w3-center"><i>Different Art Projects/Images I Have Worked On</i></p><br>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+            <div class="w3-third w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>New York</b></p>
+                    <p class="w3-opacity">Fri 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-button w3-black w3-margin-bottom"
+                        onclick="document.getElementById('ticketModal').style.display='block'">Buy Art</button>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>Paris</b></p>
+                    <p class="w3-opacity">Sat 28 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-button w3-black w3-margin-bottom"
+                        onclick="document.getElementById('ticketModal').style.display='block'">Buy Art</button>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+                <div class="w3-container w3-white">
+                    <p><b>San Francisco</b></p>
+                    <p class="w3-opacity">Sun 29 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-button w3-black w3-margin-bottom"
+                        onclick="document.getElementById('ticketModal').style.display='block'">Buy Art</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w3-container w3-content w3-padding-64 " style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required="" name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required="" name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required="" name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<script src="js/util.js"></script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>
