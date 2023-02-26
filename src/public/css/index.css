@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,200;1,400&family=Ubuntu:ital,wght@1,500&display=swap');
 
+
 body{
     font-family: 'Montserrat', sans-serif;
 background-image: linear-gradient(to right, blue, indigo,
    violet);;
  
 }
-
+#about{
+    margin-top: 10px;
+    border-top: 5px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+}
 .slide{
     width: auto;
     max-width: 400px;
@@ -19,8 +27,7 @@ background-image: linear-gradient(to right, blue, indigo,
     
     display: flex;
     color: white ;
-    background-image: linear-gradient(to right, blue,indigo,
-        violet,red,#10B0EC );
+   background-color: black;
 }
 .header h1 {
     font-family: 'Ubuntu', sans-serif;
@@ -36,7 +43,7 @@ background-image: linear-gradient(to right, blue, indigo,
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 15px;
     right: 5%;
 }
 
@@ -59,3 +66,14 @@ p {
     font-size: medium;
 }
 
+.done {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+
+    display: none;
+}
+
+.footer ul {
+    list-style: none;
+}

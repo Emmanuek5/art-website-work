@@ -10,7 +10,7 @@ app.set("view engine", "ejs");
 // import the passport module
 // import the config module
 //connect to database
-
+app.use("/favicon.ico", express.static("src/public/favicon.ico"));
 app.use(express.static(path.join(__dirname,"../public")))
 app.set("views",  "src/views");
 const apiRoute = require("./routes/api.js");
