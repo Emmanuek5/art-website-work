@@ -7,3 +7,11 @@ background-image: linear-gradient(to right, blue, indigo,
    violet);;
  
 }
+
+.form-group{
+    width:auto;
+    max-width: 400px;
+    height: auto;
+    max-width: 500px;
+    
+}
