@@ -8,7 +8,7 @@ router.get("/", checkNotAuthenticated, (req, res) => {
     res.render("auth/login")
 })
 
-router.get(
+router.post(
   "/login",
   checkNotAuthenticated,
   passport.authenticate("local", {

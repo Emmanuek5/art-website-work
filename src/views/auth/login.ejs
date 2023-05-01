@@ -102,9 +102,27 @@
         text-align: center;
         margin-top: 10px;
       }
+      .errors{
+     align-items: center;
+        position: absolute;
+        top:20px;
+        right: 30px;
+      
+      }
+      li{
+        list-style: none;
+      }
   </style>
   <body>
     
+<div class="errors w3-panel w3-red">
+  <% for(let j=0; j<errors.length ; j++) { %>
+    <ul><li><%= errors[j] %></li></ul>
+    
+
+    <% } %>
+</div>
+
 
 <div class="w3-container login">
       <form action="/login" method="post" class=" w3-container ">
@@ -115,7 +133,7 @@
         <input type="password" name="password" id="password" class=" w3-input">
 
         <button class="w3-btn  w3-deep-purple">Login</button>
-  <p class="signup">Don't have an account? <a href="/login/signup">Register</a></p>
+  <p class="signup">Don't have an account? <a href="/signup">Register</a></p>
       </form>
     </div>
     <script src="js/util.js"></script>

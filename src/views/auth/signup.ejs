@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/w3css/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    
+  </head>
+  <style>
+     body {
+        font-family: 'Poppins', sans-serif !important;
+        background-color: #1d1e28;
+        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        border-top: 6px #ad91ff solid !important;
+        font-size: 16px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    
+  .login {
+        width: 400px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        top: 15%;
+        left: 40%;
+      }
+        .login form a {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #ad91ff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+       .login form  input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+       background-color: rgba(255, 255, 255, 0.9);
+      }
+      .login form  button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #ad91ff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+        .login form  {
+        margin-bottom: 12px;
+      }
+      .login form  label {
+        display: block;
+        margin-bottom: 5px;
+      }
+    form{
+      margin: 0px 10px 10px 10px;
+          margin-bottom: 12px;
+    }
+    form h1{
+      color: purple;
+    }
+  
+    form input {
+      margin: 10px;
+    }
+    form label{
+      margin: 10px;
+      color: rgb(138, 10, 138);
+    }
+    form button{
+      margin: 10px;
+    }
+   .signup {
+    color: rgb(170, 67, 170);
+        text-align: center;
+        margin-top: 10px;
+      }
+  </style>
+  <body>
+    
+<div class="error">
+
+</div>
+<div class="w3-container login">
+      <form action="/create" method="post" class=" w3-container ">
+        <h1>Signup</h1>
+        <label for="">Username</label>
+             <input type="text" name="username" id="username" class=" w3-input">
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" class=" w3-input">
+        <label for="">Password</label>
+        <input type="password" name="password" id="password" class=" w3-input">
+        <label for="">Password Confirm</label>
+        <input type="password" name="password-2" id="password2" class=" w3-input">
+
+        <button class="w3-btn  w3-deep-purple">Signup</button>
+  <p class="signup">Don't have an account? <a href="/login">Login</a></p>
+      </form>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/signup.js"></script>
+  </body>
+</html>

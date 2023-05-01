@@ -5,7 +5,7 @@ function jsonToStringConvertor(obj) {
   var re = JSON.stringify(obj);
   return re;
 }
-//form.onsubmit = (e)=>{
+form.onsubmit = (e)=>{
    // e.preventDefault();
    
     //const xhr = new XMLHttpRequest
