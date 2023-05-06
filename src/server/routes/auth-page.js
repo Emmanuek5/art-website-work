@@ -54,7 +54,7 @@ console.log(req.body);
     const hashedPassword = await bcrypt.hash(password, salt);
 
     // Generate a token
-    const token = await bcrypt.hash(hashedPassword + Date.now() + email, salt);
+    const token = md5(email + Date.now()) + "./"+hashedPassword.slice(0,10) + Math.random();
 
     // Create a new user
     const user = new UserSchema({

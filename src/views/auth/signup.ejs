@@ -105,8 +105,12 @@
   </style>
   <body>
     
-<div class="error">
+<div class="errors w3-panel w3-red">
+  <% for(let j=0; j<errors.length ; j++) { %>
+    <ul><li><%= errors[j] %></li></ul>
+    
 
+    <% } %>
 </div>
 <div class="w3-container login">
       <form action="/create" method="post" class=" w3-container ">
