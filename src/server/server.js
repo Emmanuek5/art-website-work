@@ -22,6 +22,8 @@ app.use(
 );
 app.use(flash());
 
+
+
 app.use(passport.initialize());
 app.use(passport.session());
 app.use((req, res, next) => {
@@ -42,10 +44,21 @@ const authRoute = require("./routes/auth.js");
 app.use("/auth",authRoute)
 const authpageRoute = require("./routes/auth-page.js");
 app.use("/",authpageRoute)
-
+const shopRoutes = require("./routes/shop.js");
+app.use("/shop", shopRoutes)
 app.get("/",(req,res)=>{
     res.render("index")
 })
+
+app.get("/logout", function (req, res) {
+  req.logout(function (err) {
+    if (err) {
+      console.log(err);
+      return next(err);
+    }
+    res.redirect("/");
+  });
+});
 
 
 app.listen(process.env.PORT,(s)=>{

@@ -109,3 +109,87 @@ color: whitesmoke;
     }
     
 }
+
+
+
+/* Style for the tour section */
+.shosp {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style for the tour container */
+.shosp .w3-container {
+    margin-top: 50px;
+}
+
+/* Style for the tour title */
+.shosp h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style for the tour image */
+.shosp .w3-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style for the tour description */
+.shosp .w3-description {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Style for the tour button */
+.shosp .w3-button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shosp .w3-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #bbb;
+}
+
+.footer span {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .footer a {
+        font-size: 20px;
+    }
+
+    .footer span {
+        font-size: 16px;
+    }
+}
